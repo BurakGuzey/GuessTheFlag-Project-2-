@@ -17,30 +17,51 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P9y-tm-I7B">
-                                <rect key="frame" x="84.666666666666686" y="103" width="224" height="114"/>
+                                <rect key="frame" x="96.666666666666686" y="103" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="ZXk-2m-2JJ"/>
+                                    <constraint firstAttribute="width" constant="200" id="m2F-2N-ed2"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="us"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XUj-d9-jrK"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Icx-H4-GIB">
-                                <rect key="frame" x="84.666666666666686" y="431" width="224" height="114"/>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Icx-H4-GIB">
+                                <rect key="frame" x="96.666666666666686" y="403" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="ICJ-eO-iEf"/>
+                                    <constraint firstAttribute="height" constant="100" id="uut-6r-i1V"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="us"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B7i-yB-Iba"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DbU-I4-0WB">
-                                <rect key="frame" x="84.666666666666686" y="267" width="224" height="114"/>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DbU-I4-0WB">
+                                <rect key="frame" x="96.666666666666686" y="253" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="HS6-aG-4Ts"/>
+                                    <constraint firstAttribute="height" constant="100" id="opA-eb-DYH"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="us"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qSE-Od-W7h"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="DbU-I4-0WB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FXe-8N-DiF"/>
-                            <constraint firstItem="P9y-tm-I7B" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="J0i-8v-9Vb"/>
-                            <constraint firstItem="Icx-H4-GIB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UHm-CX-nEW"/>
-                            <constraint firstItem="P9y-tm-I7B" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="eNn-Rt-5q5"/>
-                            <constraint firstItem="Icx-H4-GIB" firstAttribute="top" secondItem="DbU-I4-0WB" secondAttribute="bottom" constant="50" id="o7B-P4-DK5"/>
-                            <constraint firstItem="DbU-I4-0WB" firstAttribute="top" secondItem="P9y-tm-I7B" secondAttribute="bottom" constant="50" id="z4o-sG-MIO"/>
+                            <constraint firstItem="Icx-H4-GIB" firstAttribute="top" secondItem="DbU-I4-0WB" secondAttribute="bottom" constant="50" id="2ng-RF-S3A"/>
+                            <constraint firstItem="P9y-tm-I7B" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7lk-PR-4Re"/>
+                            <constraint firstItem="Icx-H4-GIB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TCK-55-XTS"/>
+                            <constraint firstItem="DbU-I4-0WB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wc7-Wb-SiV"/>
+                            <constraint firstItem="DbU-I4-0WB" firstAttribute="top" secondItem="P9y-tm-I7B" secondAttribute="bottom" constant="50" id="efc-8L-NRk"/>
+                            <constraint firstItem="P9y-tm-I7B" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="oMP-fz-BEJ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="k1N-Jg-FlQ"/>
